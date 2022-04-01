@@ -1,0 +1,35 @@
+package arraylist;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+
+public class linkedlist1 {
+	public static void main(String[] args) {
+		List<String> places=new LinkedList<String>();
+		places.add("kerala");
+		places.add("a");
+		places.add("mm");
+		places.add("kk");
+		places.add("guntur");
+		printlist(places);
+		printlist2(places);
+
+	}
+	
+	private static void printlist(List<String> l) {
+		Iterator<String> it= l.iterator();
+		while(it.hasNext()) {
+			System.out.println("now visiting  "+ it.next());
+			if(it.equals("mm")) {
+				l.remove(it);
+			}
+		}
+		System.out.println("-------------------------------");
+	}
+	private static void printlist2(List<String> l) {
+		for(String s:l) {
+			System.out.println("now vivting  "+s);
+		}
+	}
+}

@@ -1,0 +1,11 @@
+package abstractclasses;
+
+public class Parrot extends bird {
+
+	@Override
+	public void fly() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

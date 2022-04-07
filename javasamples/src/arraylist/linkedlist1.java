@@ -8,14 +8,18 @@ public class linkedlist1 {
 	public static void main(String[] args) {
 		List<String> places=new LinkedList<String>();
 		places.add("kerala");
-		places.add("a");
-		places.add("mm");
-		places.add("kk");
+		places.add("australia");
+		places.add("mumbai");
+		places.add("svn");
 		places.add("guntur");
-		printlist(places);
-		printlist(places);
-		printlist2(places);
-		printlist3(places);
+		
+		System.out.println(places.contains("svn"));
+		System.out.println(places.indexOf("guntur"));
+		
+		//printlist(places);
+		//printlist(places);
+		//printlist2(places);
+		//printlist3(places);
 
 	}
 	
@@ -24,7 +28,7 @@ public class linkedlist1 {
 		while(it.hasNext()) {
 			String ele = it.next();
 			System.out.println("now visiting  "+ ele);
-			if(ele=="mm") {
+			if(ele=="mumbai") {
 				it.remove();
 			}
 			
